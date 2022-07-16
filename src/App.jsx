@@ -4,11 +4,12 @@ import './App.css'
 import Country from './component/Country'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <div className="App">
-      <Country/>
+      <button onClick={() => setIsVisible(!isVisible)}>Show/hidde</button>
+      {isVisible && <Country />}
     </div>
   )
 }
