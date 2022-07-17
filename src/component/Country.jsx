@@ -1,10 +1,8 @@
-import axios from 'axios';
-import React from 'react';
-import { useState, useEffect } from 'react'
-
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import GetInfo from "./GetInfo";
 
 const Country = () => {
-
     const [country, setCountry] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [info, setInfo] = useState("demography");
@@ -39,6 +37,5 @@ const Country = () => {
         </div>
     );
 };
-
 
 export default Country;
